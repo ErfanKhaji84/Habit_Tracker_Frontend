@@ -1,0 +1,139 @@
+.add-habit-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 1.2rem;
+  box-sizing: border-box;
+  position: relative;
+  font-family: "Iranian Sans";
+
+  background: radial-gradient(circle at 20% 20%, #6ee7b7 0%, #4ade80 70%);
+  animation: ambientBgMove 15s ease-in-out infinite alternate;
+  background-size: 200% 200%;
+}
+
+@keyframes ambientBgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 50%; }
+}
+
+.add-habit-card {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 28px;
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.08),
+    inset 0 0 20px rgba(255, 255, 255, 0.25);
+  padding: 2.2rem;
+  width: 95%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.add-habit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.add-habit-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  text-align: right;
+  direction: rtl;
+  font-family: IRANSans;
+}
+
+.add-habit-header h2 {
+  font-size: 1.3rem;
+  color: #222;
+  font-weight: 700;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+}
+
+.back-btn {
+  background: rgba(255, 255, 255, 0.55);
+  border: none;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  font-size: 1.1rem;
+  color: #444;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(180, 180, 180, 0.4);
+  transition: all 0.25s ease;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: scale(1.15);
+}
+
+.add-habit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: right;
+  direction: rtl;
+}
+
+.habit-input {
+  border: none;
+  border-radius: 16px;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  outline: none;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow:
+    inset 2px 2px 5px rgba(255, 255, 255, 0.65),
+    inset -2px -2px 10px rgba(200, 200, 200, 0.25);
+  transition: all 0.3s ease;
+  font-family: IRANSansWeb;
+}
+
+.habit-input:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.03);
+  box-shadow:
+    0 0 12px rgba(255, 255, 255, 0.6),
+    0 0 24px rgba(255, 255, 255, 0.25);
+}
+
+.habit-input::placeholder {
+  text-align: right;
+  color: #666;
+}
+
+.submit-btn {
+  margin-top: 1.8rem;
+  align-self: flex-end;
+  border: none;
+  border-radius: 999px;
+  padding: 0.9rem 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: #222;
+  box-shadow:
+    inset 1px 1px 3px rgba(255, 255, 255, 0.6),
+    0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background: linear-gradient(145deg, #ffffff 0%, #ecfdf5 100%);
+  font-family: IRANSans;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(145deg, #d1fae5 0%, #ffffff 100%);
+  transform: translateY(-3px);
+}
+

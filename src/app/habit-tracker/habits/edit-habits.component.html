@@ -1,0 +1,22 @@
+<div class="add-habit-container">
+  <div class="add-habit-card">
+
+    <div class="add-habit-header">
+      <button class="back-btn" routerLink="/">←</button>
+      <h2>✨ افزودن عادت جدید ✨</h2>
+    </div>
+
+    <form class="add-habit-form">
+      <input type="text" placeholder="نام عادت" class="habit-input green" [(ngModel)]="habits.name" name="name">
+      <input type="text" placeholder="لقمه کوچک" class="habit-input green" [(ngModel)]="habits.smallBite"  name="smallBite"  >
+      <input type="text" placeholder="لقمه ویژه" class="habit-input green" [(ngModel)]="habits.specialBite" name="specialBite"   >
+      <input type="text" placeholder="لقمه اضطراری" class="habit-input green" [(ngModel)]="habits.emergencyBite" name="emergencyBite" >
+
+
+
+      <form class="add-habit-form" (ngSubmit)="save()">
+        <button type="submit" class="submit-btn">افزودن</button>
+      </form>    </form>
+
+  </div>
+</div>
