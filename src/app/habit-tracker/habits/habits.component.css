@@ -82,7 +82,19 @@
   background: linear-gradient(135deg, #a8f0ce 0%, #c8ffee 100%);
 }
 
+.lilac {
+  background: linear-gradient(135deg, #d8c9ff 0%, #ebe3ff 100%);
+}
 
+.peach {
+  background: linear-gradient(135deg, #ffb6a3 0%, #ffd3c8 100%);
+}
+
+.lemon {
+  background: linear-gradient(135deg, #fff3a9 0%, #fff8cc 100%);
+}
+
+/* عنوان عادت سمت راست */
 .habit-title {
   flex: 1;
   text-align: right;

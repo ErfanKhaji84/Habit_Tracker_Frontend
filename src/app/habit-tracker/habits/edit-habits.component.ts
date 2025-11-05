@@ -19,8 +19,6 @@ export class EditHabits {
 
   save() {
     console.log("Habits" , this.habits);
-    this.habits.id = 23;
-    this.habits.name = "dslfoijsd;flkjsd";
     this.service.save(this.habits).subscribe(res =>{
       console.log(res);
     });

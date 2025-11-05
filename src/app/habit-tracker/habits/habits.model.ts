@@ -5,3 +5,4 @@ export class Habit {
   public specialBite?: string;
   public emergencyBite?: string;
 }
+

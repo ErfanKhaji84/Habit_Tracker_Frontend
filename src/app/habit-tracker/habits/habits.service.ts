@@ -16,4 +16,8 @@ export class HabitService {
     return this.http.post<Habit>(this.baseUrl + '/save', habit);
   }
 
+  public getAllHabits(){
+    return this.http.get<Habit[]>(`${this.baseUrl}/getAllHabits`);
+  }
+
 }

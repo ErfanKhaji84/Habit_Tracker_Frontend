@@ -36,11 +36,6 @@
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.add-habit-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-}
-
 .add-habit-header {
   display: flex;
   flex-direction: row-reverse;

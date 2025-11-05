@@ -7,24 +7,9 @@
   <p class="habit-subtext">هر روزت رو با رشد شروع کن 💛</p>
 
   <div class="habit-list">
-    <div class="habit-card mint">
-      <span class="habit-title">مطالعه کتاب</span>
+    <div class="habit-card mint" *ngFor="let item of habits">
+      <span class="habit-title">{{item.name}}</span>
       <button class="habit-btn" routerLink="/habit-details">مشاهده</button>
-    </div>
-
-    <div class="habit-card lilac">
-      <span class="habit-title">ورزش روزانه</span>
-      <button class="habit-btn">مشاهده</button>
-    </div>
-
-    <div class="habit-card peach">
-      <span class="habit-title">مدیتیشن</span>
-      <button class="habit-btn">مشاهده</button>
-    </div>
-
-    <div class="habit-card lemon">
-      <span class="habit-title">نوشتن روزانه</span>
-      <button class="habit-btn">مشاهده</button>
     </div>
   </div>
 </div>
